@@ -1,20 +1,79 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Canvas Chatbot Workspace
 
-# Run and deploy your AI Studio app
+This project is a React-based web application designed to provide an interactive chatbot experience, including step-by-step analysis, customization, and workspace management. It leverages Gemini AI for advanced conversational capabilities.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1OYvWyQPTOIDQt5eHi0rCEC_Z9t9742Yt
+- **ChatBot**: Engage with an AI-powered chatbot.
+- **Step Analysis**: Analyze steps in your workflow.
+- **Step Customize**: Customize steps to fit your needs.
+- **Step Layout**: Organize and visualize steps.
+- **Step Start**: Begin new workflows.
+- **Step Upload**: Upload files for analysis.
+- **Workspace**: Manage your workspace and wireframes.
 
-## Run Locally
+## Technologies Used
 
-**Prerequisites:**  Node.js
+- **React** (TypeScript)
+- **Vite** (for fast development and build)
+- **Gemini AI API** (via `geminiService.ts`)
+- **Custom Components** (in `components/`)
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+    ```cmd
+    git clone <your-repo-url>
+    cd canvas
+    ```
+
+2. Install dependencies:
+    ```cmd
+    npm install
+    ```
+
+3. Set up your environment variables:
+    - Copy `.env.local` and replace `PLACEHOLDER_API_KEY` with your actual Gemini API key.
+
+### Running the App
+
+```cmd
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
+
+## Project Structure
+
+- `components/`: React components for chatbot, steps, workspace, and icons.
+- `services/`: API and Gemini service integrations.
+- `types.ts`: TypeScript type definitions.
+- `constants.ts`: Application constants.
+- `App.tsx`: Main application component.
+- `index.tsx`: Entry point.
+- `vite.config.ts`: Vite configuration.
+- `.env.local`: Environment variables.
+
+## Configuration
+
+- **Gemini API Key**: Required in `.env.local` as `GEMINI_API_KEY`.
+- **Other settings**: See `vite.config.ts` and `tsconfig.json` for build and TypeScript options.
+
+## License
+
+Specify your license here (e.g., MIT).
+
+## Author
+
+@Arliiii @Abdirashid-dv / Organization
+
+---
+
+For more details, see the code and comments in each file.
