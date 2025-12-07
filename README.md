@@ -72,8 +72,8 @@ Specify your license here (e.g., MIT).
 
 ## Author
 
-@Arliiii @Abdirashid-dv / Organization
-
+[@Arliiii](https://github.com/Arliiii)
+[@Abdirashid-dv](https://github.com/Abdirashid-dv)
 ---
 
 For more details, see the code and comments in each file.
