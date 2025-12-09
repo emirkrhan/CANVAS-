@@ -2,7 +2,8 @@ import { ExtractedData } from '../types';
 
 export const extractArticleData = async (url: string): Promise<ExtractedData> => {
   try {
-    const response = await fetch('https://graphic-abstract-api.vercel.app/api/extract', {
+    const apiUrl = import.meta.env.VITE_API_URL || 'https://graphic-abstract-api.vercel.app/api/extract';
+    const response = await fetch(apiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
